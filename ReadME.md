@@ -33,6 +33,12 @@ The goal of this project was not just to create an EKS cluster but to understand
 - State Management
 - Resource Tagging
 - Declarative Infrastructure Provisioning
+## Production Components
+- AWS Load Balancer Controller
+- ACM TLS Certificates
+- IRSA (IAM Roles for Service Accounts)
+- Prometheus & Grafana Monitoring
+- ArgoCD GitOps Deployment
 
 # Prerequisites
 
