@@ -1,3 +1,7 @@
+## Architecture
+
+![EKS Architecture](assets/EKS-Production-Architecture.png)
+
 # Project Overview
 
 This project provisions a production-ready Amazon EKS (Elastic Kubernetes Service) cluster on AWS using Terraform.
@@ -5,10 +9,6 @@ This project provisions a production-ready Amazon EKS (Elastic Kubernetes Servic
 Instead of relying on a single eksctl command, the entire infrastructure is created and managed through Infrastructure as Code (IaC), providing complete visibility, repeatability, scalability, and version control.
 
 The goal of this project was not just to create an EKS cluster but to understand and implement the underlying AWS networking, security, and Kubernetes architecture that powers production Kubernetes environments.
-
-## Architecture
-
-![EKS Architecture](assets/EKS-Production-Architecture.png)
 
 
 # Infrastructure Components
