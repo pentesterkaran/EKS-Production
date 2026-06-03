@@ -187,6 +187,22 @@ source ~/.bashrc
 
 Provision infrastructure using Terraform:
 
+Initialize  Terraform
+```bash
+terraform init
+```
+
+Validate Configuration
+```bash
+terraform Validate
+```
+
+Review Execution Plan
+```bash
+terraform plan -var-file=dev.tfvars
+```
+
+Apply Infrastructure
 ```bash
 terraform apply -var-file=dev.tfvars -auto-approve
 ```
