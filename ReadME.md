@@ -6,6 +6,11 @@ Instead of relying on a single eksctl command, the entire infrastructure is crea
 
 The goal of this project was not just to create an EKS cluster but to understand and implement the underlying AWS networking, security, and Kubernetes architecture that powers production Kubernetes environments.
 
+## Architecture
+
+![EKS Architecture](assets/EKS-Production-Architecture.png)
+
+
 # Infrastructure Components
 ## Networking
 - Custom VPC
@@ -392,7 +397,7 @@ terraform destroy -var-file="dev.tfvars" -auto-approve
 
 ---
 
-# 📌 Environment Support
+# Environment Support
 
 | Environment | Variable File |
 | ----------- | ------------- |
