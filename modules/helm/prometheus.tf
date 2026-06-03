@@ -56,3 +56,5 @@ data "kubernetes_service_v1" "grafana_server" {
     namespace = "prometheus"
   }
 }
+
+### After creation of prometheus loadbalancer, use port 9090 with LB url
