@@ -1,4 +1,4 @@
-# 🚀 AWS EKS Cluster Deployment Using Terraform
+# AWS EKS Cluster Deployment Using Terraform
 
 This repository contains Terraform configurations and supporting scripts to provision an Amazon EKS cluster along with commonly used Kubernetes components such as:
 
@@ -11,7 +11,7 @@ The project is designed to help automate EKS infrastructure deployment across mu
 
 ---
 
-# 📋 Prerequisites
+# Prerequisites
 
 Before getting started, ensure you have:
 
@@ -22,7 +22,7 @@ Before getting started, ensure you have:
 
 ---
 
-# 1️⃣ Install Terraform
+# Install Terraform
 
 ```bash
 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
@@ -41,7 +41,7 @@ terraform version
 
 ---
 
-# 2️⃣ Install AWS CLI
+# Install AWS CLI
 
 ```bash
 sudo apt install -y unzip jq
@@ -67,7 +67,7 @@ aws sts get-caller-identity
 
 ---
 
-# 3️⃣ Install kubectl
+# Install kubectl
 
 ```bash
 sudo apt-get update
@@ -99,7 +99,7 @@ source ~/.bashrc
 
 ---
 
-# 4️⃣ Install eksctl
+# Install eksctl
 
 ```bash
 ARCH=amd64
@@ -128,7 +128,7 @@ source ~/.bashrc
 
 ---
 
-# 5️⃣ Install Helm
+# Install Helm
 
 ```bash
 sudo apt-get install curl gpg apt-transport-https --yes
@@ -154,7 +154,7 @@ source ~/.bashrc
 
 ---
 
-# 6️⃣ Deploy EKS Infrastructure
+# Deploy EKS Infrastructure
 
 Provision infrastructure using Terraform:
 
@@ -176,7 +176,7 @@ terraform apply -var-file=prod.tfvars -auto-approve
 
 ---
 
-# 7️⃣ Verify AWS Load Balancer Controller Versions
+# Verify AWS Load Balancer Controller Versions
 
 ```bash
 helm repo add eks https://aws.github.io/eks-charts
@@ -190,7 +190,7 @@ helm list -A
 
 ---
 
-# 8️⃣ Verify ArgoCD Chart Versions
+# Verify ArgoCD Chart Versions
 
 ```bash
 helm repo add argo https://argoproj.github.io/argo-helm
@@ -204,7 +204,7 @@ helm list -A
 
 ---
 
-# 9️⃣ Verify Prometheus Stack Versions
+# Verify Prometheus Stack Versions
 
 ```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -218,7 +218,7 @@ helm list -A
 
 ---
 
-# 🔟 Configure kubectl Access
+# Configure kubectl Access
 
 Update kubeconfig for EKS access:
 
@@ -357,7 +357,7 @@ terraform destroy -var-file="dev.tfvars" -auto-approve
 
 ---
 
-# 📖 Notes
+# Notes
 
 * Ensure AWS credentials are configured before deployment.
 * Update kubeconfig after cluster creation.
