@@ -7,32 +7,32 @@ Instead of relying on a single eksctl command, the entire infrastructure is crea
 The goal of this project was not just to create an EKS cluster but to understand and implement the underlying AWS networking, security, and Kubernetes architecture that powers production Kubernetes environments.
 
 # Infrastructure Components
-Networking
-Custom VPC
-Public and Private Subnets across multiple Availability Zones
-Internet Gateway
-Route Tables
-Route Table Associations
-CIDR-based subnet allocation using Terraform functions
-High Availability network design
-Amazon EKS
-Managed Kubernetes Control Plane
-Managed Node Group
-Cluster Endpoint Configuration
-Kubernetes Provider Integration
-AWS Authentication via AWS CLI Token
-Security
-IAM Roles
-IAM Policies
-EKS Cluster Role
-Node Group Role
-Least Privilege Access Model
-Infrastructure as Code
-Terraform Modules
-Reusable Variables
-State Management
-Resource Tagging
-Declarative Infrastructure Provisioning
+## Networking
+- Custom VPC
+- Public and Private Subnets across multiple Availability Zones
+- Internet Gateway
+- Route Tables
+- Route Table Associations
+- CIDR-based subnet allocation using Terraform functions
+- High Availability network design
+## Amazon EKS
+- Managed Kubernetes Control Plane
+- Managed Node Group
+- Cluster Endpoint Configuration
+- Kubernetes Provider Integration
+- AWS Authentication via AWS CLI Token
+## Security
+- IAM Roles
+- IAM Policies
+- EKS Cluster Role
+- Node Group Role
+- Least Privilege Access Model
+## Infrastructure as Code
+- Terraform Modules
+- Reusable Variables
+- State Management
+- Resource Tagging
+- Declarative Infrastructure Provisioning
 
 # Prerequisites
 
