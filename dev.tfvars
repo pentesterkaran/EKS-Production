@@ -1,5 +1,5 @@
-env            = "Project-Creation"
-region         = "us-east-1"
+env    = "Project-Creation"
+region = "us-east-1"
 #s3_bucket      = "eks-production-state"
 vpc_cidr_block = "10.0.0.0/16"
 
@@ -17,7 +17,7 @@ endpoint_public_access  = true
 authentication_mode     = "API_AND_CONFIG_MAP"
 
 ondemand_instance_types = ["c7i-flex.large"]
-spot_instance_types     = ["c7i-flex.large","t3.small","c5a.large", "c5a.xlarge", "m5a.large", "m5a.xlarge", "c5.large", "m5.large", "t3a.large", "t3a.xlarge", "t3a.medium"]
+spot_instance_types     = ["c7i-flex.large", "t3.small", "c5a.large", "c5a.xlarge", "m5a.large", "m5a.xlarge", "c5.large", "m5.large", "t3a.large", "t3a.xlarge", "t3a.medium"]
 
 desired_capacity_on_demand = "1"
 min_capacity_on_demand     = "1"
